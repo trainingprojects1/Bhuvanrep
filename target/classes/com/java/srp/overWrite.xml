@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+   <context:annotation-config/>
+   <bean id="beanJeevan" class="com.java.srp.Person">
+  <property name="id" value="1"/>
+  <property name="name" value="Jeevan"/>
+  <property name="familyDetails">
+   <bean class="com.java.srp.Family">
+    <property name="city" value="Dharan"/>
+    <property name="state" value="Provions1"/>
+   </bean>
+  </property>
+ </bean>
+ <bean id="jobDetails" class="com.java.srp.JobDetail">
+  <property name="job" value="Software Engineer"/>
+  <property name="company" value="IBM"/>
+  <property name="location" value="USA"/>
+ </bean>
+ 
+ <bean id="beenbhuvan" class="com.java.srp.Person">
+  <property name="id" value="2"/>
+  <property name="name" value="bhuvan"/>
+  <property name="familyDetails">
+   <bean class="com.java.srp.Family">
+    <property name="city" value="columbus"/>
+    <property name="state" value="ohi"/>
+   </bean>
+  </property>
+ </bean>
+ 
+ <bean id="beenhem" class="com.java.srp.Person">
+  <property name="id" value="3"/>
+  <property name="name" value="hem"/>
+  <property name="familyDetails">
+   <bean class="com.java.srp.Family">
+    <property name="city" value="jhapa"/>
+    <property name="state" value="ky"/>
+   </bean>
+  </property>
+ </bean>
+ 
+   </beans>
+   
+   
