@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 	 
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/java/srp/overWrite.xml");
-		  Person p1 = (Person)ctx.getBean("beanJeevan");
-		  p1.showAllInfo();
+		  Person p11 = (Person)ctx.getBean("beanJeevan");
+		  p11.showAllInfo();
 
 		 
 		  Person p2 = (Person)ctx.getBean("beenbhuvan");
