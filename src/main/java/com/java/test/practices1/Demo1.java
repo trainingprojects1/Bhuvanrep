@@ -1,4 +1,4 @@
-package com.java.srp;
+package com.java.test.practices1;
 
 public class Demo1 {
 	public String getFullName(String FristName, String LastName) {
