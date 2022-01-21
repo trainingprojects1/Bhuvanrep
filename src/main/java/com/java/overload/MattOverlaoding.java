@@ -17,5 +17,6 @@ public void sub( int a , int b) {
 }
   public void add( int a , int b){
     int c = a+b;
-    system.out.println(c);
+    System.out.println(c);
+}
 }
